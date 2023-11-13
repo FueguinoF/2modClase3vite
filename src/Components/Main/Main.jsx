@@ -9,7 +9,7 @@ const Main=()=>{
     const producto = {
         id:"A000001",
         SKU:"F3SMT003241A",
-        img:"./src/img/Tirantes.jpg",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsd0d3N1L20cq_DdmLZmiaWuNJlmAbjT1mJmTLDMTUNhmjSPFLKfnk0N1PxsS4ZZ8T64&usqp=CAU",
         imgalt:"tirante 4x4' de pino por metro",
         nombre:"Tirante 4x4' de pino X mt.",
         cat:"Vigas - Columnas",
