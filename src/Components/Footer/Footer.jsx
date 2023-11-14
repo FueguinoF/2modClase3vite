@@ -10,7 +10,7 @@ const Footer=()=>{
         <ChakraProvider>
             <Container as='footer' h="6vh" maxW="100vw" display="flex" flexDirection="row" 
             justifyContent={"space-around"} bg={'linear-gradient(rgb(55, 179, 44, 1), rgb(21, 180, 7, 0.5))'}
-            alignItems={'center'} fontSize={{base:'12',sm:'14',md:'18'}}>
+            alignItems={'center'} fontSize={{base:'8',sm:'12',md:'18'}}>
                 <Box>{<strong> Copyright - <Link _hover={{color:'rgba(253, 240, 123, 0.986)', textDecoration:'none'}}>AF desarrollos</Link> - 2023 </strong>}</Box>
                 <Box display="flex" flexDirection="row" justifyContent={'space-around'} 
                 alignItems={'center'}>
