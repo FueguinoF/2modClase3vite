@@ -7,16 +7,15 @@ const Cardmia=({img, imgalt, nombre, cat, descripcion, marcayfab, material, dime
    
     return(				
         <Card 
-            direction={{ base: 'column', sm: 'row' }}
-            maxW={{ base: '400px', sm: '60%' }}
-            maxH={{ base: '300px', sm: '100%' }}
+            direction={{ base: 'column', md: 'row' }}
+            maxW={{ base: '90%', sm: '60%' }}
             overflow='hidden'
-            variant='outline'
-            // opacity={1}
+            variant='elevated'
+           
         >
             <Image 
                 objectFit='cover'
-                maxW={{ base: '100%', sm: '300px' }}
+                maxW={{ base: '100%', md: '300px' }}
                 src= {img}
                 alt={imgalt}
             />
@@ -27,7 +26,7 @@ const Cardmia=({img, imgalt, nombre, cat, descripcion, marcayfab, material, dime
                   <Box display={"flex"} >
                     <Text py='1' fontSize='sm' as='b' align={'left'}> {cat} </Text></Box>
                   <Divider/>
-                  <Box h={{ sm: '60%'}}
+                  <Box 
                     display={"flex"} flexDir={'column'} justifyContent={'space-around'} py='3'>
                     <Text py='1' fontSize='md' align={'left'}> Material: {material}</Text>
                     <Text py='2' fontSize='xl' align={'left'}> {descripcion}</Text></Box>
@@ -37,15 +36,16 @@ const Cardmia=({img, imgalt, nombre, cat, descripcion, marcayfab, material, dime
                     <Text py='2' fontSize='lg' as='b' align={'left'}>Dimensiones: {dimensiones}</Text></Box>  
                 </CardBody>
                 <CardFooter>
-                    <Box display={"flex"} flexDir={'row'} justifyContent={'space-around'}
+                    <Box display={"flex"} flexDir={{lg:'row' , md:'column' }} alignItems={'center'} justifyContent={'space-around'}
                         w={{ base: '100%', sm: '100%' }} py='2'>
                         <Text py='2' fontSize='xl' as='b' >Precio: {precio}</Text>
-                        <Box display={"flex"} flexDir={'row'} justifyContent={'space-around'} alignItems={'center'}
-                        w={{ base: '30%', sm: '30%' }}>
-                        <Button variant='solid' colorScheme='green'>
+                        <Box display={"flex"} flexDir={'row'} 
+                        >
+                        <Button variant='solid' colorScheme='green' mr={'4'}>
                         Comprar
                         </Button >
                         <Text _hover={{color:'blue'}}><FontAwesomeIcon icon={faThumbsUp} fontSize={'32'} /></Text>
+                        
                         </Box>
                     </Box>
                 </CardFooter>

@@ -1,6 +1,6 @@
 // import './Main.css' 
 
-import { Box, Center, ChakraProvider, Grid , GridItem} from "@chakra-ui/react";
+import {  Container } from "@chakra-ui/react";
 import { Cardmia } from "../Cardmia/Cardmia";
 
 
@@ -24,14 +24,14 @@ const Main=()=>{
     const {id,SKU,img,imgalt,nombre,cat,descripcion,marcayfbr,material,dimensiones,precio} = producto
 
     return(	
-        <ChakraProvider>			
-            <Box h="80vh" w="100vw" display="flex" flexDirection="column" alignItems={"center"} 
+        		
+            <Container minH="80vh" maxW="100vw" display="flex" flexDirection="column" alignItems={"center"} 
             justifyContent={"space-around"} bgImg={"url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NTkzNzEzLWltYWdlLWt3dnhvZXB2LmpwZw.jpg')"}  > 
-               
+
                     <Cardmia img={img} imgalt={imgalt} nombre={nombre} cat={cat} descripcion={descripcion} marcayfab={marcayfbr} material={material} dimensiones={dimensiones} precio={precio} />
-            
-            </Box>
-        </ChakraProvider>
+
+            </Container>
+       
     );   
 
 }
